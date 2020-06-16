@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ICvBotService\ICvBotService.csproj" />
-    <ProjectReference Include="..\ICvBotWebDriver\ICvBotWebDriver.csproj" />
   </ItemGroup>
 
 </Project>

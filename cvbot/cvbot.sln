@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cvbot.Console", "cvbot.Console\cvbot.Console.csproj", "{C4521BF0-FEEE-41CA-BBF0-EFE8E919AF2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cvbot.Console", "cvbot.Console\cvbot.Console.csproj", "{C4521BF0-FEEE-41CA-BBF0-EFE8E919AF2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cvbot.CvBotWebDriver", "cvbot.Browser\cvbot.CvBotWebDriver.csproj", "{1EAAA58F-C4C7-4DEE-8F19-5EB8EA1B3A54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cvbot.CvBotWebDriver", "cvbot.Browser\cvbot.CvBotWebDriver.csproj", "{1EAAA58F-C4C7-4DEE-8F19-5EB8EA1B3A54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICvBotWebDriver", "ICvBotWebDriver\ICvBotWebDriver.csproj", "{052437F8-2252-4F16-BBDC-3E716361D9D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICvBotWebDriver", "ICvBotWebDriver\ICvBotWebDriver.csproj", "{052437F8-2252-4F16-BBDC-3E716361D9D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cvbot.Common", "cvbot.Common\cvbot.Common.csproj", "{4F7823B3-552F-492E-B6FB-E3BDB004E4CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cvbot.Common", "cvbot.Common\cvbot.Common.csproj", "{4F7823B3-552F-492E-B6FB-E3BDB004E4CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cvbot.Services", "cvbot.Services\cvbot.Services.csproj", "{EBAD8B32-E8AF-4E21-B8CC-02228C68C551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cvbot.Services", "cvbot.Services\cvbot.Services.csproj", "{EBAD8B32-E8AF-4E21-B8CC-02228C68C551}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICvBotService", "ICvBotService\ICvBotService.csproj", "{93EC8D76-3C0B-47D6-94E5-FA1D3F89E145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cvbot.Controller", "cvbot.Controller\cvbot.Controller.csproj", "{156AFABE-08B5-4D12-93C3-73A1B050144E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{EBAD8B32-E8AF-4E21-B8CC-02228C68C551}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBAD8B32-E8AF-4E21-B8CC-02228C68C551}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBAD8B32-E8AF-4E21-B8CC-02228C68C551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93EC8D76-3C0B-47D6-94E5-FA1D3F89E145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93EC8D76-3C0B-47D6-94E5-FA1D3F89E145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93EC8D76-3C0B-47D6-94E5-FA1D3F89E145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93EC8D76-3C0B-47D6-94E5-FA1D3F89E145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{156AFABE-08B5-4D12-93C3-73A1B050144E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156AFABE-08B5-4D12-93C3-73A1B050144E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156AFABE-08B5-4D12-93C3-73A1B050144E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156AFABE-08B5-4D12-93C3-73A1B050144E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

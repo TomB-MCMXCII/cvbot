@@ -7,8 +7,9 @@ namespace cvbot.console
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Starting browser");
-            new IoCContainer();
+            var container = new IoCContainer();
+            var botController = container.botController;
+            botController.Start();
         }
     }
 }

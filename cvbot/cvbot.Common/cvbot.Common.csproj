@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\cvbot.Browser\cvbot.CvBotWebDriver.csproj" />
+    <ProjectReference Include="..\cvbot.Controller\cvbot.Controller.csproj" />
     <ProjectReference Include="..\cvbot.Services\cvbot.Services.csproj" />
   </ItemGroup>
 
