@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace cvbot.console
+namespace cvbot.IBotWebDriver
 {
     public interface ICvBotWebDriver
     {

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\cvbot.Browser\cvbot.CvBotWebDriver.csproj" />
+    <ProjectReference Include="..\cvbot.Services\cvbot.Services.csproj" />
+  </ItemGroup>
+
+</Project>
