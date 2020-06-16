@@ -14,7 +14,7 @@ namespace cvbot.Services
         private readonly ICvBotWebDriver cvBotWebDriver;
         public void StartBrowser()
         {
-            cvBotWebDriver.launchDriver();
+            cvBotWebDriver.Launch();
         }
     }
 }

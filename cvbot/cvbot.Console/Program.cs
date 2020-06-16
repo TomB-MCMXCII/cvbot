@@ -10,6 +10,7 @@ namespace cvbot.console
             var container = new IoCContainer();
             var botController = container.botController;
             botController.Start();
+            Console.ReadLine();
         }
     }
 }

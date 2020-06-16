@@ -12,16 +12,24 @@ namespace cvbot.Browser
     public class CvBotChromeDriver : ICvBotWebDriver
     {
         private IWebDriver driver;
-        public void launchDriver()
+
+       
+
+        public void Launch()
         {
-            driver = new ChromeDriver();  
+            driver = new ChromeDriver();
+            
             driver.Navigate().GoToUrl("https://www.cv.lv/darba-sludinajumi/informacijas-tehnologijas?sort=inserted&dir=desc");
-            var advertisements = driver.FindElement(By.ClassName("cvo_module_offer"));
-            GetAdvertisements(advertisements);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            var advertisements = driver.FindElements(By.ClassName("cvo_module_offer"));
+            ParseAdvertisements(advertisements);
         }
-        public void GetAdvertisements(IWebElement webElements)
+        public void (ReadOnlyCollection<IWebElement> webElements)
         {
-            var t = webElements.Text;
+           
+                var toclick = webElements[5].FindElement(By.ClassName("offer_primary_info"));
+                toclick.FindElement(By.TagName("a")).Click();
+            
         }
     }
 }

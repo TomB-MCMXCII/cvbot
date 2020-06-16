@@ -6,6 +6,6 @@ namespace cvbot.IBotWebDriver
 {
     public interface ICvBotWebDriver
     {
-        void launchDriver();
+        void Launch();
     }
 }
