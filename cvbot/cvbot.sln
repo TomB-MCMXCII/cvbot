@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cvbot.Console", "cvbot.Console\cvbot.Console.csproj", "{C4521BF0-FEEE-41CA-BBF0-EFE8E919AF2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cvbot.WebDriver", "cvbot.Browser\cvbot.WebDriver.csproj", "{1EAAA58F-C4C7-4DEE-8F19-5EB8EA1B3A54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICvBotWebDriver", "ICvBotWebDriver\ICvBotWebDriver.csproj", "{052437F8-2252-4F16-BBDC-3E716361D9D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C4521BF0-FEEE-41CA-BBF0-EFE8E919AF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4521BF0-FEEE-41CA-BBF0-EFE8E919AF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4521BF0-FEEE-41CA-BBF0-EFE8E919AF2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EAAA58F-C4C7-4DEE-8F19-5EB8EA1B3A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EAAA58F-C4C7-4DEE-8F19-5EB8EA1B3A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EAAA58F-C4C7-4DEE-8F19-5EB8EA1B3A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EAAA58F-C4C7-4DEE-8F19-5EB8EA1B3A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{052437F8-2252-4F16-BBDC-3E716361D9D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052437F8-2252-4F16-BBDC-3E716361D9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052437F8-2252-4F16-BBDC-3E716361D9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052437F8-2252-4F16-BBDC-3E716361D9D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

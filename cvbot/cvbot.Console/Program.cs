@@ -2,11 +2,17 @@
 
 namespace cvbot.console
 {
-    class Program
+    public class Program
     {
+        public Program(ICvBotWebDriver cvBotWebDriver)
+        {
+            this.cvBotWebDriver = cvBotWebDriver;
+        }
+
+        private readonly ICvBotWebDriver cvBotWebDriver;
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Starting browser");
         }
     }
 }
