@@ -13,7 +13,7 @@ namespace cvbot.Browser
     public class CvBotChromeDriver : ICvBotWebDriver
     {
         private IWebDriver driver;
-
+        private string applicationText = "Labdien! Vēlos pieteikties vakancei.2019.gadā izgāju Codelex kursus un pašlaik paralēli mācos tālmācībā par programmētāju.2019.gada beigās sāku strādāt kā programmētājs, diemžēl covid-19 dēl tiku atlaists.Tagad esmu jauna darba meklējumos.Mans GitHub - https://github.com/TomB-MCMXCII";
         public void Launch()
         {
             driver = new ChromeDriver();
@@ -26,7 +26,7 @@ namespace cvbot.Browser
             FaceBookLogin();
             Thread.Sleep(5000);
 
-            driver.Navigate().GoToUrl("https://www.cv.lv/darba-sludinajumi/informacijas-tehnologijas?sort=inserted&dir=desc");
+            driver.Navigate().GoToUrl("https://www.cv.lv/darba-sludinajumi/informacijas-tehnologijas/q-.Net/q-c/q-javascript/q-typescript?sort=inserted&dir=desc");
 
             var ads = driver.FindElements(By.ClassName("cvo_module_offer"));
             ClickAdvertisements(ads);
@@ -37,7 +37,14 @@ namespace cvbot.Browser
             {
                 var toclick = ad.FindElement(By.ClassName("offer_primary_info"));
                 toclick.FindElement(By.TagName("a")).Click();
-
+                var windowHandles = driver.WindowHandles;
+                driver.SwitchTo().Window(windowHandles[1]);
+                driver.FindElement(By.XPath("//*[@id=\"savebuttons\"]/button[1]")).Click();
+                driver.FindElement(By.XPath("//*[@id=\"userapplication\"]")).SendKeys(applicationText);
+                driver.FindElement(By.XPath("//*[@id=\"cvselect\"]")).FindElement(By.XPath("//*[@id=\"cvselect\"]/option[2]")).Click();
+                driver.FindElement(By.XPath("//*[@id=\"applyform\"]/form/div[8]/input")).Click();
+                driver.Close();
+                driver.SwitchTo().Window(windowHandles[0]);
             }
         }
 
